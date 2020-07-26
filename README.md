@@ -28,7 +28,7 @@ const sample = async () => {
     unsubscribe1, //
     unsubscribe2,
   ].forEach((unsubscribe) => unsubscribe());
-});
+};
 sample();
 ```
 
