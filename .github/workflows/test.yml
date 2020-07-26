@@ -31,13 +31,13 @@ jobs:
       - name: install
         run: yarn install --ignore-scripts
       - name: run tests
-        run: yarn test --color
+        run: yarn test --color --ci
         env:
           CI: true
       - uses: codecov/codecov-action@v1.0.10
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage/clover.xml
+          file: ./coverage/coverage-final.json
           fail_ci_if_error: true
         if: ${{ matrix.node-version == '10.x' }}
 #  release:

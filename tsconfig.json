@@ -4,10 +4,12 @@
 
     /* Basic Options */
     "declaration": true,
+    "declarationMap": true,
     "lib": ["ES2018"],
     "module": "commonjs",
     "outDir": ".",
     "rootDir": ".",
+    "sourceMap": true,
     "target": "ES2018",
 
     /* Strict Type-Checking Options */
