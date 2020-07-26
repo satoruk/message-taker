@@ -5,7 +5,7 @@ it("name", () => {
 });
 
 it("version", () => {
-  expect(pkg.version).toStrictEqual("1.0.0");
+  expect(typeof pkg.version).toStrictEqual("string");
 });
 
 it("onTimeout", () => {
