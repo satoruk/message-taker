@@ -13,7 +13,7 @@ $ yarn add message-taker
 ## Usage
 
 ```ts
-import { useMessageTaker, onTimeout } from "./message-taker";
+import { useMessageTaker, onTimeout } from "message-taker";
 
 const sample = async () => {
   const [notify, take] = useMessageTaker<string>();
