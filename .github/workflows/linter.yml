@@ -38,7 +38,7 @@ jobs:
           echo ::add-path::$HOME/bin
           echo ::add-path::$(go env GOPATH)/bin # for Go projects
         env:
-          REVIEWDOG_VERSION: "0.10.1"
+          REVIEWDOG_VERSION: "0.10.2"
       - name: Run reviewdog
         run: |
           reviewdog -fail-on-error -reporter=github-pr-check -runners=cspell
