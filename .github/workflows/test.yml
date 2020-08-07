@@ -42,7 +42,7 @@ jobs:
         if: ${{ matrix.node-version == '10.x' }}
   release:
     needs: test
-    name: Node v${{ matrix.node-version }}
+    name: release on Node v${{ matrix.node-version }}
     strategy:
       fail-fast: false
       matrix:
