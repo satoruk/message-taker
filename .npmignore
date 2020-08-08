@@ -1,10 +1,7 @@
+!*.d.ts
 *.code-workspace
 *.config.js
 *.json
 *.test.js
 *.ts
 .*
-
-# include the files
-!*.d.ts
-!package.json
