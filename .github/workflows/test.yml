@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        node-version: [10.x, 12.x, 13.x, 14.x]
+        node-version: [10.x, 12.x, 14.x]
     runs-on: ubuntu-latest
 
     steps:
@@ -42,7 +42,7 @@ jobs:
         if: ${{ matrix.node-version == '10.x' }}
   release:
     needs: test
-    name: Node v${{ matrix.node-version }}
+    name: release on Node v${{ matrix.node-version }}
     strategy:
       fail-fast: false
       matrix:
